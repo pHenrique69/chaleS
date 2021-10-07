@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    
+    background-color: rgb(241, 213, 159);
+    
+}
+
+.circleM { 
+    margin-top: -100px;
+    margin-left: -100px;
+    width: 430px;
+    height: 430px;
+    background-color: rgb(177, 146, 89);
+    border-radius: 50%;
+    border-top-right-radius: 35% ;
+    border-bottom-left-radius: 35%;
+    float: left;
+}
+
+
+#logoC{
+    height: 200px;
+    margin-top: 130px;
+    margin-left: 150px;
+
+}
+
+/* Novo menu */
+
+
+
+#menu{
+    visibility: hidden;
+}
+
+
+   
+
+
+
+
+
+
+
+/* tentativa galeria lightbox */
+
+
+.galeria{
+    width: 880px;
+    list-style: none;
+    display:flex;
+    margin:100px auto;
+}
+
+.min{
+    width: 200px;
+    padding: 10px
+}
+
+.lbox{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.lbox:target{
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(109, 109, 109, 0.308);
+    position: fixed;
+}
+
+.box_img{
+    width: 1000px;
+    margin: 150px auto;
+}
+
+.btn{
+    color:#fff;
+    font-family: arial;
+    text-decoration: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+#prev{
+    left: 5%;
+    top: 45%;
+}
+
+#next{
+    right:5%;
+    top:45%;
+}
+
+#close{
+    top:0%;
+    right: 2%;
+}
+
+.box_img img{
+    opacity:0;
+
+}
+
+.lbox:target .box_img img{
+
+    opacity: 1;
+    transition: opacity .4s;
+}
